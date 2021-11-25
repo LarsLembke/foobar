@@ -3,7 +3,7 @@
 import Keg from "./Keg";
 
 export default function Kegs(){
-    return <section>
+    return <section id="kegs">
         <Keg/>
         <Keg/>
         <Keg/>

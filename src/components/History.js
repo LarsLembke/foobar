@@ -4,7 +4,7 @@ import Order from "./Order";
 
 
 export default function History(){
-    return <div>
+    return <div id="history">
         <Order/>
     </div>
 }

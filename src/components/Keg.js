@@ -1,7 +1,7 @@
 //Kegs
 
 export default function Kegs(){
-    return <article>
+    return <article className="keg">
         <figure></figure>
         <figcaption></figcaption>
     </article>

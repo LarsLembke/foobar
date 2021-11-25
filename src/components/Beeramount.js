@@ -1,7 +1,7 @@
 //Beeramount
 
 export default function Beeramount(){
-    return <figure>
+    return <figure id="beer_amount">
         <p></p>
     </figure>
 }
