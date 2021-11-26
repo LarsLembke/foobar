@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { useState, useEffect } from "react";
 import './index.scss';
 import Col1 from "./components/Col1";
@@ -23,10 +22,10 @@ function App() {
 
     <div className="App">
       <h1>FOOBAR</h1>
-      <img scr="foobar_logo.png"/>
+      <img scr="foobar_logo.png" alt="logo"/>
       <Col1 order={order} reload={setOrder}/>
-      <Col2 />
-      <Col3 />
+      <Col2 data={order}/>
+      <Col3 data={order}/>
 
     </div>
   );
