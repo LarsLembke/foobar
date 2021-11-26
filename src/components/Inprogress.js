@@ -1,18 +1,30 @@
 //Inprogress
 
 import Order from "./Order";
+import { useState, useEffect } from "react";
+
 
 export default function Inprogress(props){
 
-    console.log(props.order)
+    console.log(props)
 
-    const inps = props.order
+    const [order, setOrder] = useState([]);
 
-    const mapped = inps.map((inp) => <Order name={inp.order} id={props.id}/>);
+  useEffect(() => {
+    fetch("https://foobarspacemonkeys.herokuapp.com/")
+    .then(res => res.json())
+    .then(data => setOrder(data.serving));
+  }, []);
 
-    console.log(mapped)
+    
+
+    const mapped = order.map((ord) => <Order no={ord.id} order={ord.order}/>);
+
+
+    console.log(order)
 
     return <div id="in_progress">
         {mapped}
+
     </div>
 }
