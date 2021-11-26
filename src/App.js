@@ -11,12 +11,8 @@ function App() {
 
   useEffect(() => {
     fetch("https://foobarspacemonkeys.herokuapp.com/")
-      .then((res) => res.json())
-      .then((data) => {
-        //console.log({data})
-
-        setOrder(data);
-      });
+    .then(res => res.json())
+    .then(data => console.log(data));
   }, []);
 
 
@@ -26,7 +22,7 @@ function App() {
 
 
     <div className="App">
-      <Col1 order={data}/>
+      <Col1 />
       <Col2 />
       <Col3 />
 
