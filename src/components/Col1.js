@@ -7,7 +7,7 @@ export default function Col1(props){
     console.log(props.order);
 
     return <section id="col1">
-        <Inprogress order={props.order} reload={props.reload}/>
+        <Inprogress order={props.order.serving} reload={props.reload}/>
         <Inqueue order={props.order.queue}/>
     </section>
 }
