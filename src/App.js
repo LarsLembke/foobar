@@ -23,7 +23,8 @@ function App() {
 
     <div className="App">
       <h1>FOOBAR</h1>
-      <Col1 />
+      <img scr="foobar_logo.png"/>
+      <Col1 order={order}/>
       <Col2 />
       <Col3 />
 

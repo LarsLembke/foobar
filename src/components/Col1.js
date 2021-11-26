@@ -2,9 +2,12 @@
 import Inprogress from "./Inprogress"
 import Inqueue from "./Inqueue"
 
-export default function Col1(){
+export default function Col1(props){
+
+    console.log(props.order);
+
     return <section id="col1">
-        <Inprogress/>
-        <Inqueue/>
+        <Inprogress order={props.order.serving}/>
+        <Inqueue order={props.order.queue}/>
     </section>
 }
