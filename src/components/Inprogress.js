@@ -13,7 +13,7 @@ export default function Inprogress(props){
 
     return <div id="in_progress">
 
-      <h3>I GANG</h3>
+      <h2>I GANG</h2>
         {mapped}
 
     </div>

@@ -22,11 +22,12 @@ function App() {
 
     <div className="App">
       <h1>FOOBAR</h1>
-      <img scr="foobar_logo.png" alt="logo"/>
+      <img className="foobar_logo"></img>
+      <div className="cols">
       <Col1 order={order} reload={setOrder}/>
       <Col2 data={order}/>
       <Col3 data={order}/>
-
+      </div>
     </div>
   );
 }
