@@ -4,7 +4,7 @@ import Keg from "./Keg";
 
 export default function Kegs(props){
 
-    if(!props.taps) {
+    if(!props.taps || !props.storage) {
         return null;
     }
 

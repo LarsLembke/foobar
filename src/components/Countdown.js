@@ -20,16 +20,16 @@ export default function Countdown(props){
 
 
     function checkTime () {
-        if (today.getHours() <= parseInt(closingTime.slice(0,2))){
+        if (today.getHours() <= parseInt(closingTime.slice(0,2)) || today.getHours() > 13){
             return "open"
         }
         return "closed"
     }
 
     function timeToClose () {
-        const ttHrs = today.getHours() - parseInt(closingTime.slice(0,2))
-        const ttMts = today.getMinutes() - parseInt(closingTime.slice(3,5))
-        const ttScs = today.getSeconds() - parseInt(closingTime.slice(6,8))
+        const ttHrs =  parseInt(closingTime.slice(0,2)) - today.getHours()
+        const ttMts = parseInt(closingTime.slice(3,5)) - today.getMinutes() + 59;
+        const ttScs = parseInt(closingTime.slice(6,8)) - today.getSeconds() + 59;
 
         return `${ttHrs}:${ttMts}:${ttScs}`
     }
@@ -37,6 +37,6 @@ export default function Countdown(props){
 
     return <div id="countdown">
         <Circletimer/>
-        <Numbertimer/>
+        <Numbertimer timeToClose={timeToClose()} checkTime={checkTime()}/>
     </div>
 }

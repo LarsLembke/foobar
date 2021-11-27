@@ -10,6 +10,6 @@ export default function Col3(props){
 
     return <section id="col3">
         <Countdown bar={props.data.bar}/>
-        <Sales/>
+        <Sales data={props.data}/>
     </section>
 }
