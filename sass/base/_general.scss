@@ -14,6 +14,8 @@ body {
     margin-top: 1vw;
     display: block; 
     width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -21,7 +23,7 @@ body {
 .cols {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 7vw;
+    gap: 5vw;
 }
 
 .cols p {
@@ -41,11 +43,12 @@ body {
 }
 
 #col1 {
-    width: 120%;
+    width: 100%;
+    max-height: 85%;
 }
 
 #col2 {
-    width: 120%;
+    width: 100%;
 }
 
 

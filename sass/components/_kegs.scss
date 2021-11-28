@@ -1,13 +1,12 @@
 .kegs_header {
     font-family: lato, sans-serif;
-        font-style: normal;
-        font-weight: 100;
-        color: white;
+    font-style: normal;
+    font-weight: 100;
+    color: white;
     display: grid; 
     grid-column: 1/-1;
     text-align: center;
-    margin-bottom: 1vw;
-  
+    
     
 }
 
@@ -20,7 +19,7 @@
     overflow: auto;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
     max-height: 50%;
     grid-column-gap: 1vw;
     overflow-y: hidden;
@@ -29,9 +28,10 @@
 
 .keg {
     border: 1px solid white;
-    padding: 0.5vw;
     text-align: center;
     margin-bottom: 1vw;
+    padding: 0.5vw;
+    margin-top: -0.5vw;
    
 }
 
@@ -48,7 +48,7 @@
 }
 
 .niveauindikator img {
-    width: 7.5vw;
-    height: 4vw;
+    width: 8vw;
+    height: 4.5vw;
     
 }
