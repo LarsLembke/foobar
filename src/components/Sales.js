@@ -11,53 +11,76 @@ export default function Sales(props){
 
 
 
+    getOrderId();
 
-    // function getBeers() {
 
-    //     const beerBeerBeer = [];
+    function getOrderId() {
 
-    //     const eachOrder = []
+        const idMap = props.data.serving.map((ord) => ord.id)
 
-    //     console.log(props.data.serving, 'sales')
+        const smallestId = idMap[0]
 
-    //     const orderMap = props.data.serving.map((ord) => eachOrder.concat(ord.order));
-    //     const beerMap = orderMap.map((beers) => beers.map((beer) => beerBeerBeer.concat(beer)));
-    
-    //     // console.log(servedBeer)
-    
-    //     console.log(orderMap, 'orderMap')
-    //     console.log(beerMap, 'beerMap')
-    //     console.log(beerMap.toString(","), 'servedBeer')
-    //     console.log(beerMap.toString(",").split(","), 'servedBeer')
-    
-    //     const servedBeer = beerMap.toString(",").split(",")
+        const latestId = idMap[idMap.length - 1]
 
-    // }
+        //console.log(smallestId, latestId)
 
-    // function getOrderId() {}
+        if (!localStorage.id) {
+            localStorage.setItem('id', latestId)
 
-    // function saveBeers() {
+            getBeers();
+        } else {
+            const currentId = localStorage.getItem('id')
 
-    //     if(!localStorage.getItem(servedBeer)) {
+            // console.log(currentId, smallestId)
 
-    //         localStorage.setItem(servedBeer, servedBeer);
+            if(currentId < smallestId) {
+                localStorage.setItem('id', latestId)
+                getBeers();
+
+            }
+        }
+
+    }
+
+
+
+    function getBeers() {
+        const beerBeerBeer = [];
+
+        const eachOrder = []
+
+        const orderMap = props.data.serving.map((ord) => eachOrder.concat(ord.order));
+        const beerMap = orderMap.map((beers) => beers.map((beer) => beerBeerBeer.concat(beer)));
+
+        const servedBeer = beerMap.toString(",").split(",")
+
+        saveBeers(servedBeer);
+
+    }
+
+
+    function saveBeers(param) {
+
+        const servedBeer = param
+
+        if(!localStorage.getItem('servedBeer')) {
+
+            localStorage.setItem('servedBeer', servedBeer);
         
         
-    //         } else {
+            } else {
         
-    //             const savedBeer = localStorage.getItem(servedBeer).split(',');
+                const savedBeer = localStorage.getItem('servedBeer').split(',');
         
-    //             const beerUpdate = servedBeer.concat(savedBeer)
-            
-    //             console.log(beerUpdate)
+                const beerUpdate = servedBeer.concat(savedBeer)
+
+                localStorage.setItem('servedBeer', beerUpdate)
                 
-    //         }
-        
-        
-        
-    //     console.log(localStorage.getItem(servedBeer).split(","), 'storage')
+            }
+      
+    //  console.log(localStorage.getItem('servedBeer').split(","), 'storage')
 
-    // }
+    }
 
  
 
