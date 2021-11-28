@@ -1,0 +1,54 @@
+.kegs_header {
+    font-family: lato, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        color: white;
+    display: grid; 
+    grid-column: 1/-1;
+    text-align: center;
+    margin-bottom: 1vw;
+  
+    
+}
+
+#kegs {
+    
+    padding: 1vw;
+    border: 2px solid white;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    overflow: auto;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    max-height: 50%;
+    grid-column-gap: 1vw;
+    overflow-y: hidden;
+   
+}
+
+.keg {
+    border: 1px solid white;
+    padding: 0.5vw;
+    text-align: center;
+    margin-bottom: 1vw;
+   
+}
+
+.keg p {
+    background-color: #1d1b2e;
+    margin: 0 auto;
+    
+}
+
+.keg:last-child {
+    position: relative; 
+    left: 109%;
+    
+}
+
+.niveauindikator img {
+    width: 7.5vw;
+    height: 4vw;
+    
+}

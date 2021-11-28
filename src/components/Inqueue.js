@@ -14,7 +14,7 @@ export default function Inqueue(props){
     const mapped = props.order.map((ord) => <Order no={ord.id} order={ord.order}/>);
 
     return <div id="in_queue">
-        <h2>KØ</h2>
+        <h2>QUEUE</h2>
         {mapped}
     </div>
 }

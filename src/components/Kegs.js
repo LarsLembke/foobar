@@ -14,7 +14,7 @@ export default function Kegs(props){
 
 
     return <section id="kegs">
+        <h2 className="kegs_header">KEGS</h2>
         {mapped}
-        {storageMap}
     </section>
 }

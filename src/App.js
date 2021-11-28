@@ -21,8 +21,8 @@ function App() {
 
 
     <div className="App">
-      <h1>FOOBAR</h1>
-      <img className="foobar_logo"></img>
+      
+      <img src="foobar_logo.png" alt="foobar logo" className="foobar_logo" />
       <div className="cols">
       <Col1 order={order} reload={setOrder}/>
       <Col2 data={order}/>
