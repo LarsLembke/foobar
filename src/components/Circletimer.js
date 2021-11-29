@@ -3,7 +3,8 @@
 export default function Circletimer(){
     return <figure id="circle_timer">
         <h2 class="closing_in">CLOSING IN</h2>
-        <svg viewBox="0 0 200 200">
+        <div class="circle_timer_div">
+        <svg class="circle_timer_svg" viewBox="0 0 200 200">
       <path
         id="bg"
         d="
@@ -50,6 +51,7 @@ export default function Circletimer(){
 
 
     </svg>
+    </div>
     </figure>
 }
 
