@@ -1,5 +1,4 @@
 //History
-import { useState, useEffect } from "react";
 
 import Order from "./Order";
 
@@ -10,51 +9,25 @@ export default function History(props){
         return null
     }
 
-    const url = 'https://etall-acc0.restdb.io/rest/foobarhistory'
+    // const url = 'https://etall-acc0.restdb.io/rest/foobarhistory'
 
-    const idMap = props.order.map((ord) => ord.id);
-    const currentOrders = props.order
+    // const idMap = props.order.map((ord) => ord.id);
+    // const currentOrders = props.order
 
-    console.log(idMap);
-    console.log(currentOrders);
+    // console.log(idMap);
+    // console.log(currentOrders);
 
     // saveOrders();
 
-    // const [history, setHistory] = useState([]);
+    // function saveOrders (param) {
 
-    
-
-    // useEffect(() => {
-    //     fetch(url, {
-    //       method: "post",
-    //       headers: {
-    //           "Content-Type": "application/json",
-    //           "x-apikey": "61769dcc8597142da1745a44",
-    //           "cache-control": "no-cache"
-    //       }, body: currentOrders
-    //     })
-
-    //       .then((res) => res.json())
-    //       .then((data) => {
-    //         setHistory(data);
-    //       });
-    //   }, []);
-
-
-
-
-
-    // function saveOrders () {
-
-    //     if (!history) {
-
-
-    //         setHistory();
+    //     if (!param) {
+    //         postData();
 
     //         console.log('param')
     //     } else {
     
-    //         const idHistory = history.map((p) => p.id)
+    //         const idHistory = param.map((p) => p.id)
     
     //         console.log(idHistory, 'stored')
     
@@ -63,21 +36,18 @@ export default function History(props){
 
 
 
-
-
-
     // async function postData() {
 
 
     //     const coString = JSON.stringify(currentOrders);
 
-        // const response = await fetch(url, {
-        //     method: "post",
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //         "x-apikey": "61769dcc8597142da1745a44",
-        //         "cache-control": "no-cache"
-        //     },
+    //     const response = await fetch(url, {
+    //         method: "post",
+    //         headers: {
+    //             "Content-Type": "application/json",
+    //             "x-apikey": "61769dcc8597142da1745a44",
+    //             "cache-control": "no-cache"
+    //         },
     //         body: coString
     //     });
     //     const data = await response.json();
