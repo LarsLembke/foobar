@@ -1,0 +1,324 @@
+#bg {
+    stroke: #1d1b2e;
+    fill: none;
+    stroke-width: 10;
+    
+  }
+  
+  path#draw {
+    fill: none;
+    stroke: #21f0aa;
+    stroke-width: 12;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;/*1=24 */
+    animation: 60s drawIt linear 1 forwards;
+    stroke-linecap: round;
+    animation-iteration-count: infinite;
+  }
+  @keyframes drawIt {
+      100% {
+          stroke-width: 12;
+          stroke: #21f0aa;
+          stroke-dashoffset: 0;
+      
+      }
+  }
+
+
+  path#draw2 {
+    fill: none;
+    stroke-width: 12;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;/*1=24 */
+    animation: 60s drawIt2 linear 1 forwards;
+    stroke-linecap: round;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes drawIt2 {
+    0% {
+        stroke-width: 10;
+        stroke: #0e0e4f;
+        stroke-opacity: 1;
+      
+    }
+
+  50%  {
+        stroke: rgb(0, 126, 118);
+    }
+  100% {
+      stroke: #21f0aa;
+      stroke-width: 10;
+    stroke-dashoffset: 0;
+    stroke-opacity: 1;
+  }
+}
+
+path#draw3 {
+    fill: none;
+    stroke-width: 13;
+    stroke: transparent;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;/*1=24 */
+    animation: 60s drawIt3 linear 1 forwards;
+    stroke-linecap: round;
+    animation-iteration-count: infinite;
+   
+    
+  }
+
+  @keyframes drawIt3 {
+    1% {
+        
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+   
+ }
+
+2% {
+    stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+        
+}
+
+3% {
+        stroke: transparent; 
+        stroke-opacity: 0;
+       
+    }
+
+    10% {
+        stroke: transparent; 
+        stroke-opacity: 0;
+    }
+
+    11% {
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+    }
+
+    12% {
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+    }
+
+    13% {
+        stroke: transparent; 
+        stroke-opacity: 0;
+    }
+
+    20% {
+        stroke: transparent; 
+        stroke-opacity: 0;
+    }
+
+    21% {
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+    }
+
+    22% {
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+    }
+
+   23% {
+        stroke: transparent; 
+        stroke-opacity: 0;
+    }
+
+    30% {
+        stroke: transparent; 
+        stroke-opacity: 0;
+    }
+
+    31% {
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+    }
+
+    32% {
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+    }
+
+    33% {
+        stroke: transparent; 
+        stroke-opacity: 0;
+    }
+
+    40% {
+        stroke: transparent; 
+        stroke-opacity: 0;
+        
+    }
+    41% {
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+   
+ }
+
+42% {
+    stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+}
+
+43% {
+        stroke: transparent; 
+        stroke-opacity: 0;
+       
+    }
+
+    50% {
+        stroke: transparent; 
+        stroke-opacity: 0;
+    }
+
+    51% {
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+    }
+
+    52% {
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+    }
+
+    53% {
+        stroke: transparent; 
+        stroke-opacity: 0;
+    }
+
+    60% {
+        stroke: transparent;
+        stroke-opacity: 0;
+    }
+
+    61% {
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+    }
+
+    62% {
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+    }
+
+    63% {
+        stroke: transparent; 
+        stroke-opacity: 0;
+       
+    }
+
+    70% {
+        stroke: transparent; 
+        stroke-opacity: 0;
+        
+    }
+
+    71% {
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+    }
+
+    72% {
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+    }
+
+    73%{
+        stroke: transparent; 
+        stroke-opacity: 0;
+       
+    }
+
+    80% {
+        stroke: transparent; 
+        stroke-opacity: 0;
+        
+    }
+
+    81% {
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+    }
+
+    82% {
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+    }
+
+    83% {
+        stroke: transparent;
+        stroke-opacity: 1;
+    }
+
+    90%{
+        stroke: transparent;
+        stroke-opacity: 1;
+        
+    }
+
+    91%{
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+    }
+
+    92% {
+        stroke-width: 13;
+        stroke: #ffffff;
+        stroke-opacity: 1;
+        filter: blur(1px);
+    }
+
+    93% {
+        stroke: transparent;
+        stroke-opacity: 1;
+       
+    }
+
+    100% {
+        stroke: transparent;
+        stroke-opacity: 1;
+        stroke-dashoffset: 0;
+    }
+  }
+
