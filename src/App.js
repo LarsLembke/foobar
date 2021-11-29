@@ -12,10 +12,13 @@ function App() {
 
 
   useEffect(() => {
+
+    const id = setInterval(() =>
+
     fetch("https://foobarspacemonkeys.herokuapp.com/")
     .then(res => res.json())
-    .then(data => setOrder(data));
-  }, []);
+    .then(data => setOrder(data))
+  , 5000)}, []);
 
 
 
