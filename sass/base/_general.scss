@@ -51,5 +51,11 @@ body {
     width: 100%;
 }
 
+#col3 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+}
+
 
 

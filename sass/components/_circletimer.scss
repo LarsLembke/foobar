@@ -1,3 +1,21 @@
+#circle_timer {
+    margin-top: 1vw;
+    border: 2px solid white;
+}
+
+#circle_timer svg {
+    margin-top:  -1vw;
+}
+
+.closing_in {
+    margin-top: 1vw;
+    font-family: lato, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        color: white;
+        text-align: center;
+}
+
 #bg {
     stroke: #1d1b2e;
     fill: none;

@@ -8,7 +8,7 @@ export default function Numbertimer(props){
 
 
     return <figure id="number_timer">
-        <p>{props.timeToClose}</p>
+        <p class="time_to_close">{props.timeToClose}</p>
         <p>{props.checkTime}</p>
     </figure>
 }

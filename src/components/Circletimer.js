@@ -2,6 +2,7 @@
 
 export default function Circletimer(){
     return <figure id="circle_timer">
+        <h2 class="closing_in">CLOSING IN</h2>
         <svg viewBox="0 0 200 200">
       <path
         id="bg"
