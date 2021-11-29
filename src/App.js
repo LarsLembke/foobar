@@ -8,12 +8,23 @@ function App() {
 
   const [order, setOrder] = useState([]);
 
+  // const [time, setTime] = useState(Date.now());
+
+
   useEffect(() => {
     fetch("https://foobarspacemonkeys.herokuapp.com/")
     .then(res => res.json())
     .then(data => setOrder(data));
   }, []);
 
+
+
+// //useEffect(() => {
+//   const interval = setInterval(() => setTime(Date.now()), 1000);
+//   return () => {
+//     clearInterval(interval);
+//   };
+// }, []);
 
 
   return (
@@ -31,5 +42,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
