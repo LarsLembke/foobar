@@ -1,10 +1,11 @@
 //Circletimer
-
-export default function Circletimer(){
+import Numbertimer from "./Numbertimer";
+export default function Circletimer(props){
     return <figure id="circle_timer">
-        <h2 class="closing_in">CLOSING IN</h2>
-        <div class="circle_timer_div">
-        <svg class="circle_timer_svg" viewBox="0 0 200 200">
+        <h2 className="closing_in">CLOSING IN</h2>
+        <div className="circle_timer_div">
+        <Numbertimer timeToClose={props.timeToClose} checkTime={props.checkTime}/>
+        <svg className="circle_timer_svg" viewBox="0 0 200 200" preserveAspectRatio="XMidYMin">
       <path
         id="bg"
         d="

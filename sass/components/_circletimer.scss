@@ -1,23 +1,32 @@
 #circle_timer {
     margin-top: 1vw;
     border: 2px solid white;
-    height: 35vh;
     overflow: hidden;
-    
-    
+    display: grid; 
+    grid-template-rows: 0.5fr 8fr;
+   height: 40vh;
    
+    
+}
+
+#countdown {
+    position: relative; 
+    
 }
 
 .circle_timer_svg {
-
-  max-height: 30vh;
-  display: flex; 
-  left: 50%;
-  right: 50%;
-  margin: auto;
- 
+    display: block; 
+    margin: auto;
+    padding-top: 4vh;
+   height: 30vh;
    
+}
 
+.circle_timer_div {
+    position: relative; 
+    top: -10vh;
+    max-height: 10vh;
+    
 }
 
 .closing_in {
@@ -27,9 +36,6 @@
         font-weight: 100;
         color: white;
         text-align: center;
-       
-
-  
 }
 
 #bg {

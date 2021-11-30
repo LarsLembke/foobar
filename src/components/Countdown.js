@@ -36,7 +36,6 @@ export default function Countdown(props){
 
 
     return <div id="countdown">
-        <Circletimer/>
-        <Numbertimer timeToClose={timeToClose()} checkTime={checkTime()}/>
+        <Circletimer timeToClose={timeToClose()} checkTime={checkTime()}/>
     </div>
 }

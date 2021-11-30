@@ -9,7 +9,6 @@ body {
     overflow-y: hidden;
     
 }
-
 .foobar_logo {
     margin-top: 1vw;
     display: block; 
@@ -43,12 +42,20 @@ body {
 }
 
 #col1 {
+    margin-top: 2vh;
     width: 100%;
-    max-height: 85%;
+   
 }
 
 #col2 {
     width: 100%;
+}
+
+#col3 {
+    width: 100%; 
+    margin-top: 2vh;
+    
+
 }
 
 
