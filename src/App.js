@@ -8,8 +8,6 @@ function App() {
 
   const [order, setOrder] = useState([]);
 
-  // const [time, setTime] = useState(Date.now());
-
 
   useEffect(() => {
 
@@ -22,13 +20,6 @@ function App() {
 
 
 
-// //useEffect(() => {
-//   const interval = setInterval(() => setTime(Date.now()), 1000);
-//   return () => {
-//     clearInterval(interval);
-//   };
-// }, []);
-
 
   return (
 
@@ -36,7 +27,7 @@ function App() {
 
     <div className="App">
       
-      <img src="foobar_logo.png" alt="foobar logo" className="foobar_logo" />
+      
       <div className="cols">
       <Col1 order={order} reload={setOrder}/>
       <Col2 data={order}/>
