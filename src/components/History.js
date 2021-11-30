@@ -9,70 +9,82 @@ export default function History(props){
         return null
     }
 
-    // const url = 'https://etall-acc0.restdb.io/rest/foobarhistory'
+    const url = 'https://etall-acc0.restdb.io/rest/foobarhistory'
 
-    // const idMap = props.order.map((ord) => ord.id);
-    // const currentOrders = props.order
+    const idMap = props.order.map((ord) => ord.id);
+    const currentOrders = props.order
 
-    // console.log(idMap);
+    console.log(idMap);
     // console.log(currentOrders);
 
-    // saveOrders();
+    let map4Orders = '';
 
-    // function saveOrders (param) {
-
-    //     if (!param) {
-    //         postData();
-
-    //         console.log('param')
-    //     } else {
+    saveOrders(map4Orders);
     
-    //         const idHistory = param.map((p) => p.id)
-    
-    //         console.log(idHistory, 'stored')
-    
-    //     }
-    //     }
+
+    function saveOrders () {
+
+        const localOrder = currentOrders.map((lOrd) => localStorage.setItem(lOrd.id, lOrd.order))
 
 
 
-    // async function postData() {
+        if (!localStorage.orderIds) {
 
 
-    //     const coString = JSON.stringify(currentOrders);
+            localStorage.setItem('orderIds', idMap);
 
-    //     const response = await fetch(url, {
-    //         method: "post",
-    //         headers: {
-    //             "Content-Type": "application/json",
-    //             "x-apikey": "61769dcc8597142da1745a44",
-    //             "cache-control": "no-cache"
-    //         },
-    //         body: coString
-    //     });
-    //     const data = await response.json();
-    //     console.log(data);
-    //     getData();
+            console.log(idMap,'set storage')
+        } else {
 
-    // }
+        const savedIds = localStorage.getItem('orderIds').split(',');
+
+        const newSaves = idMap.map((ns) => {
+            const stringNS = ns.toString()
+            if (savedIds.includes(stringNS)){
+                console.log('n')
 
 
+            } else {
+                console.log(ns)
 
-    // async function getData() {
+                localStorage.setItem('orderIds', savedIds.concat(ns))
+            }
+            
+        });
 
-    //     const response = await fetch(url, {
-    //         method: "get",
-    //         headers: {
+       
 
-    //             Accept: "application/json",
-    //             "Content-Type": "application/json",
-    //             "x-apikey": "61769dcc8597142da1745a44"
-    //         }
-    //     });
-    //     const data = await response.json();
-    //     console.log(data);
+        console.log(newSaves)
+        console.log(savedIds)
         
-    // }
+
+        }
+
+        const localOrder4Map = localStorage.getItem('orderIds').split(',')
+
+        const localOrder4MapSort = localOrder4Map.sort(sortOrders)
+
+        function sortOrders (a,b) {
+            if (a<b) {
+                return 1
+            }
+            return -1
+        }
+
+        map4Orders = localOrder4MapSort.map((lo4m) => {
+            const order4 = localStorage.getItem(lo4m).split(',');
+
+            return <Order no={lo4m} order={order4}/>
+
+        })
+
+        return map4Orders;
+    
+    }
+
+
+
+
 
 
 
@@ -81,6 +93,6 @@ export default function History(props){
     //get ids, get stored ids
 
     return <div id="history">
-        <Order/>
+        {map4Orders}
     </div>
 }
