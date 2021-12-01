@@ -8,7 +8,7 @@ export default function Kegs(props){
         return null;
     }
 
-    const mapped = props.taps.map((tap) => <Keg level={tap.level}  capacity={tap.capacity} />);
+    const mapped = props.taps.map((tap) => <Keg level={tap.level}  capacity={tap.capacity} beer={tap.beer} />);
     const storageMap = props.storage.map((sto) => <p>{sto.amount}</p>);
 
 

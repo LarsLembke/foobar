@@ -20,18 +20,23 @@ export default function Countdown(props){
 
 
     function checkTime () {
-        if (today.getHours() <= parseInt(closingTime.slice(0,2)) || today.getHours() > 13){
-            return "open"
-        }
-        return "closed"
+        let hrs =  parseInt(closingTime.slice(0,2)) - today.getHours();
+        let mts = parseInt(closingTime.slice(3,5)) - today.getMinutes() + 59;
+
+        return (hrs * 60) + mts;
+
     }
 
     function timeToClose () {
-        const ttHrs =  parseInt(closingTime.slice(0,2)) - today.getHours()
-        const ttMts = parseInt(closingTime.slice(3,5)) - today.getMinutes() + 59;
-        const ttScs = parseInt(closingTime.slice(6,8)) - today.getSeconds() + 59;
+        let ttHrs =  parseInt(closingTime.slice(0,2)) - today.getHours();
+        let ttMts = parseInt(closingTime.slice(3,5)) - today.getMinutes() + 59;
+        let ttScs = parseInt(closingTime.slice(6,8)) - today.getSeconds() + 59;
 
-        return `${ttHrs}:${ttMts}:${ttScs}`
+        ttMts = ttMts < 10 ? '0' + ttMts : ttMts;
+        ttScs = ttScs < 10 ? '0' + ttScs : ttScs;
+
+
+        return `${ttHrs}:${ttMts}:${ttScs}`;
     }
 
 
