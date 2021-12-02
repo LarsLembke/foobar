@@ -2,47 +2,49 @@
   font-family: lato, sans-serif;
   font-style: normal;
   font-weight: 100;
+  width: 100%;
   color: white;
   display: grid;
   grid-column: 1/-1;
   grid-row: 1/-1;
   text-align: center;
-  margin-bottom: 1.5vw;
 }
 
 #kegs {
   padding: 1vw;
   border: 2px solid white;
-  margin-top: 1vw;
-  margin-bottom: 1vw;
+  margin-top: 1vh;
   overflow: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  max-height: 50%;
-  grid-column-gap: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  height: 35vh;
+  width: 60vh;
+  grid-column-gap: 1vh;
+  grid-row-gap: 1vh;
   overflow-y: hidden;
+  justify-content: center;
 
 }
 
 .keg {
   border: 1px solid white;
   text-align: center;
-  margin-bottom: 1vw;
-  padding: 0.5vw;
-  margin-top: -0.5vw;
-  
+  padding-left: 1vh;
+  padding-right: 1vh;
+  padding-top: 1vh;
+ flex-basis: 10px;
   
 }
 
 .keg p {
   background-color: #1d1b2e;
   margin: 0 auto;
+  font-size: 0.9rem;
 }
 
-.niveauindikator img {
-  width: 8vw;
-  height: 4.5vw;
+.niveauindikator svg {
+  width: 12vh;
+  height: 7.5vh;
 }
 
 #indicators {

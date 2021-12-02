@@ -1,17 +1,23 @@
 #beer_amount {
     border: 2px solid white;
     height: 10vh;
-    grid-area: 1/2;
-    margin-top: 1vw;
-    
+    width: 30vh;
+    margin-top: 1vh;
   
+}
+
+#beer_amount p {
+    text-align: center;
+    padding-top: 4vh;
+    height: 30vh;
+    width: 30vh;
 }
 
 #beer_graph {
     border: 2px solid white;
-    height: 33vh;
-    grid-area: 2/3;
-    margin-top: 1vw;
+    height: 37.8vh;
+    margin-top: 1vh;
+    width: 30vh;
 
 
    

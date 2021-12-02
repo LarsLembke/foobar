@@ -1,10 +1,11 @@
 #circle_timer {
-  margin-top: 1vw;
+  margin-top: 1vh;
   border: 2px solid white;
   overflow: hidden;
   display: grid;
   grid-template-rows: 0.5fr 8fr;
-  height: 40vh;
+  height: 37.8vh;
+  width: 30vh;
 }
 
 #countdown {
@@ -14,7 +15,8 @@
 .circle_timer_svg {
   display: block;
   margin: auto;
-  padding-top: 6vh;
+  padding-top: 8vh;
+  width: 30vh;
   height: 30vh;
 }
 
@@ -25,7 +27,7 @@
 }
 
 .closing_in {
-  margin-top: 1vw;
+  margin-top: 1vh;
   font-family: lato, sans-serif;
   font-style: normal;
   font-weight: 100;

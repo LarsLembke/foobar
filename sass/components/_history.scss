@@ -1,6 +1,10 @@
 #history {
     padding: 1vw;
     border: 2px solid white;
-    margin-top: 1vw;
+    margin-top: 1vh;
     overflow: auto;
+    display: flex; 
+    flex-direction: column;
+    height: 29.8vh;
+    width: 60vh;
 }

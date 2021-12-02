@@ -2,17 +2,18 @@
     margin: 0;
 }
 
+
 body {
-    margin-left: 5vw;
-    margin-right: 5vw;
     background-color: #2a283d;
-    overflow-y: hidden;
+    overflow-y: hidden;   
     
 }
+
 .foobar_logo {
     margin-top: 1vw;
     display: block; 
-    width: 20vw;
+    width: 26vh;
+    height: 16vh;
     margin-left: auto;
     margin-right: auto;
 
@@ -20,9 +21,10 @@ body {
 
 
 .cols {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5vw;
+   display: flex; 
+   flex-direction: row;
+   justify-content: center;
+   gap: 8vh;
 }
 
 .cols p {
@@ -43,19 +45,17 @@ body {
 
 #col1 {
     margin-top: 2vh;
-    width: 100%;
    
 }
 
 #col2 {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #col3 {
-    width: 100%; 
     margin-top: 2vh;
     
-
 }
 
 
