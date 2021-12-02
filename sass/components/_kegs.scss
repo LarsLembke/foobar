@@ -22,6 +22,7 @@
   max-height: 50%;
   grid-column-gap: 1vw;
   overflow-y: hidden;
+
 }
 
 .keg {
@@ -30,17 +31,13 @@
   margin-bottom: 1vw;
   padding: 0.5vw;
   margin-top: -0.5vw;
+  
+  
 }
 
 .keg p {
   background-color: #1d1b2e;
   margin: 0 auto;
-}
-
-.keg:nth-child(6),
-.keg:nth-child(7),
-.keg:nth-child(8) {
-  position: relative;
 }
 
 .niveauindikator img {
