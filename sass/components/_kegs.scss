@@ -5,6 +5,7 @@
     color: white;
     display: grid; 
     grid-column: 1/-1;
+    grid-row: 1/-1;
     text-align: center;
     margin-bottom: 1.5vw;
     
@@ -19,8 +20,8 @@
     margin-bottom: 1vw;
     overflow: auto;
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     max-height: 50%;
     grid-column-gap: 1vw;
     overflow-y: hidden;
@@ -42,11 +43,9 @@
     
 }
 
-.keg:last-child {
+.keg:nth-child(6), .keg:nth-child(7), .keg:nth-child(8) {
     position: relative; 
-    left: 111%;
    
-    
 }
 
 .niveauindikator img {
