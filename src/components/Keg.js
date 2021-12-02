@@ -1,60 +1,21 @@
 //Kegs
 
 export default function Kegs(props){
+
+    console.log(props.level / 13.888888889)
+
+
+    const indicatorAngle = props.level / 13.8888889;
+
+    const indicatorLevel = {
+        transformOrigin: "center 95%",
+        transform: `rotate(${indicatorAngle}deg)`
+    }
+
     return <article className="keg">
         <figure className="niveauindikator">
         <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"  viewBox="0 0 506.9 275.6" id="indicators">
   <defs>
-{/*       
-    <style>
-      .cls-1, .cls-5 {
-        fill: none;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-8 {
-        stroke: #fff;
-      }
-
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-8 {
-        stroke-miterlimit: 10;
-      }
-
-      .cls-1, .cls-3, .cls-4 {
-        stroke-width: 2px;
-      }
-
-      .cls-2 {
-        fill: #68bd96;
-      }
-
-      .cls-3 {
-        fill: url(#radial-gradient);
-      }
-
-      .cls-4 {
-        fill: url(#radial-gradient-2);
-      }
-
-      .cls-5 {
-        stroke: #292d6b;
-      }
-
-      .cls-5, .cls-8 {
-        stroke-width: 0.5px;
-      }
-
-      .cls-6 {
-        fill: url(#radial-gradient-3);
-      }
-
-      .cls-7 {
-        fill: url(#radial-gradient-4);
-      }
-
-      .cls-8 {
-        fill: #1e1b30;
-      }
-    </style> */}
 
     <radialGradient id="radial-gradient" cx="126.99" cy="133.62" fx="423.876395132809" fy="409.59860994237175" r="405.34" gradientTransform="translate(0 16) scale(1 0.88)" gradientUnits="userSpaceOnUse">
       <stop offset="0.45" stop-color="#68bd96"/>
@@ -300,9 +261,11 @@ export default function Kegs(props){
     <line class="cls-5" x1="79.7" y1="259.3" x2="60" y2="258.6"/>
     <line class="cls-5" x1="79.6" y1="262.1" x2="59.9" y2="262.1"/>
   </g>
-  <g id="Layer_3" data-name="Layer 3">
+  <g id="Layer_3" data-name="Layer 3" >
     <circle class="cls-8" cx="252.5" cy="264.3" r="9.9"/>
-    <path class="cls-2" d="M252.9,263.8a1.4,1.4,0,0,0-1.3-1.4c-91.8-1.4-206.1-3-207.2-2.5a2.1,2.1,0,0,0-1,.9,1.7,1.7,0,0,0-.1.9,1.8,1.8,0,0,0,.9,1.1c3.4,2,201.9,2.6,207.3,2.5A1.4,1.4,0,0,0,252.9,263.8Z"/>
+    <path class="cls-2" d="M252.9,262.8c0-0.7-0.6-1.3-1.3-1.4c-91.8-0.5-206.1-1-207.2-0.5c-0.4,0.2-0.8,0.5-1,0.9
+		c-0.1,0.3-0.1,0.6-0.1,0.9c0.1,0.5,0.5,0.9,0.9,1.1c3.4,2,201.9,0.6,207.3,0.5c0.8,0,1.4-0.6,1.4-1.4
+		C252.9,262.9,252.9,262.9,252.9,262.8z" style={indicatorLevel}/>
   </g>
 </svg>
 
