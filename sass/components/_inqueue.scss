@@ -1,11 +1,14 @@
 #in_queue {
     height: 40vh;
-    width: 30vh;
     padding: 1vw;
     border: 2px solid white;
     margin-top: 1vh;
     overflow: auto;
     
+}
+
+#in_queue p {
+    padding-left: 1vh;
 }
 
 #in_queue h2 {
@@ -18,4 +21,10 @@
         text-align: center;
     
     
+}
+
+@media screen and (min-width: 769px) {
+    #in_queue {
+        width: 30vh;
+    }
 }

@@ -9,6 +9,7 @@ export default function History(props){
         return null
     }
 
+
     const url = 'https://etall-acc0.restdb.io/rest/foobarhistory'
 
     const idMap = props.order.map((ord) => ord.id);
@@ -80,7 +81,9 @@ export default function History(props){
             const order4 = localStorage.getItem(lo4m).split(',');
             const lo4mNO = parseInt(lo4m)
 
-            return <Order no={lo4mNO} order={order4}/>
+            return<Order no={lo4mNO} order={order4}/>
+               
+            
             }
         })
 
@@ -89,16 +92,11 @@ export default function History(props){
     }
 
 
-
-
-
-
-
-
-
     //get ids, get stored ids
 
     return <div id="history">
+        <h2 className="order_history">ORDER HISTORY</h2>
         {map4Orders}
+        
     </div>
 }

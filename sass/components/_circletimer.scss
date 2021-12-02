@@ -5,7 +5,7 @@
   display: grid;
   grid-template-rows: 0.5fr 8fr;
   height: 37.8vh;
-  width: 30vh;
+  
 }
 
 #countdown {
@@ -61,7 +61,7 @@ path#draw2 {
   fill: none;
   stroke-width: 12;
   stroke-dasharray: 1;
-  animation: 86500s drawIt2 linear 1 forwards;
+  animation: 200s drawIt2 linear 1 forwards;
   stroke-linecap: round;
   animation-iteration-count: infinite;
 }
@@ -70,16 +70,25 @@ path#draw2 {
   0% {
     stroke-width: 10;
     stroke: #0e0e4f;
-    stroke-opacity: 1;
+    
   }
 
-  50% {
-    stroke: rgb(0, 126, 118);
+  25% {
+    stroke: rgb(22, 128, 121);
   }
-  100% {
+  50% {
     stroke: #21f0aa;
     stroke-width: 10;
-    stroke-opacity: 1;
+   
+  }
+
+  75%{
+    stroke: rgb(0, 62, 109);
+  }
+
+  100% {
+    stroke-width: 10;
+    stroke: #0e0e4f;
   }
 }
 
@@ -88,7 +97,7 @@ path#draw3 {
   stroke-width: 13;
   stroke: transparent;
   stroke-dasharray: 1;
-  animation: 86500s drawIt3 linear 1 forwards;
+  animation: 200s drawIt3 linear 1 forwards;
   stroke-linecap: round;
   animation-iteration-count: infinite;
 }
@@ -332,4 +341,10 @@ path#draw3 {
     stroke: transparent;
     stroke-opacity: 1;
   }
+}
+
+@media screen and (min-width: 769px) {
+    #circle_timer {
+        width: 30vh;
+}
 }

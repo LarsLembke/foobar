@@ -5,26 +5,21 @@
 
 body {
     background-color: #2a283d;
-    overflow-y: hidden;   
+    margin-left: 3vh; 
+    margin-right: 3vh;
     
 }
 
 .foobar_logo {
-    margin-top: 1vw;
-    display: block; 
-    width: 26vh;
-    height: 16vh;
-    margin-left: auto;
-    margin-right: auto;
-
+    display: none;
 }
 
-
-.cols {
-   display: flex; 
-   flex-direction: row;
-   justify-content: center;
-   gap: 8vh;
+.foobar_logo_mobile {
+        display: block; 
+        width: 26vh;
+        height: 16vh;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 .cols p {
@@ -48,17 +43,44 @@ body {
    
 }
 
-#col2 {
-    display: flex;
-    flex-direction: column;
-}
-
 #col3 {
     margin-top: 2vh;
     
 }
 
+@media screen and (min-width: 769px) {
 
+    body {
+        overflow-y: hidden;   
+    }
+
+    .foobar_logo {
+        margin-top: 1vw;
+        display: block; 
+        width: 26vh;
+        height: 16vh;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+
+    .foobar_logo_mobile {
+        display: none;
+    }
+
+    .cols {
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        gap: 8vh;
+     }
+
+    #col2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
 
 
 

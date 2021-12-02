@@ -1,11 +1,14 @@
 
 #in_progress {
     height: 40vh;
-    width: 30vh;
     padding: 1vw;
     border: 2px solid white;
     margin-top: 1vh;
     overflow: auto;
+}
+
+#in_progress p {
+    padding-left: 1vh;
 }
 
 #in_progress h2 {
@@ -14,7 +17,15 @@
         font-style: normal;
         font-weight: 100;
         color: white;
-        margin-bottom: 0.5vh;
+        margin-bottom: 1vh;
         text-align: center;
     
     }
+
+    @media screen and (min-width: 769px) {
+        #in_progress {
+            width: 30vh;
+        }
+    }
+
+    
