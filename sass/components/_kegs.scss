@@ -1,55 +1,112 @@
 .kegs_header {
-    font-family: lato, sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    color: white;
-    display: grid; 
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-    text-align: center;
-    margin-bottom: 1.5vw;
-    
-    
+  font-family: lato, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  color: white;
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  text-align: center;
+  margin-bottom: 1.5vw;
 }
 
 #kegs {
-    
-    padding: 1vw;
-    border: 2px solid white;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-    overflow: auto;
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    max-height: 50%;
-    grid-column-gap: 1vw;
-    overflow-y: hidden;
-   
+  padding: 1vw;
+  border: 2px solid white;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-height: 50%;
+  grid-column-gap: 1vw;
+  overflow-y: hidden;
 }
 
 .keg {
-    border: 1px solid white;
-    text-align: center;
-    margin-bottom: 1vw;
-    padding: 0.5vw;
-    margin-top: -0.5vw;
-   
+  border: 1px solid white;
+  text-align: center;
+  margin-bottom: 1vw;
+  padding: 0.5vw;
+  margin-top: -0.5vw;
 }
 
 .keg p {
-    background-color: #1d1b2e;
-    margin: 0 auto;
-    
+  background-color: #1d1b2e;
+  margin: 0 auto;
 }
 
-.keg:nth-child(6), .keg:nth-child(7), .keg:nth-child(8) {
-    position: relative; 
-   
+.keg:nth-child(6),
+.keg:nth-child(7),
+.keg:nth-child(8) {
+  position: relative;
 }
 
 .niveauindikator img {
-    width: 8vw;
-    height: 4.5vw;
-    
+  width: 8vw;
+  height: 4.5vw;
+}
+
+#indicators {
+  .cls-1,
+  .cls-5 {
+    // fill: none;
+  }
+
+  .cls-1,
+  .cls-2,
+  .cls-3,
+  .cls-4,
+  .cls-8 {
+    stroke: #fff;
+  }
+
+  .cls-1,
+  .cls-2,
+  .cls-3,
+  .cls-4,
+  .cls-5,
+  .cls-8 {
+    stroke-miterlimit: 10;
+  }
+
+  .cls-1,
+  .cls-3,
+  .cls-4 {
+    stroke-width: 2px;
+  }
+
+  .cls-2 {
+    fill: #68bd96;
+  }
+
+  .cls-3 {
+    fill: url(#radial-gradient);
+  }
+
+  .cls-4 {
+    fill: url(#radial-gradient-2);
+  }
+
+  .cls-5 {
+    stroke: #292d6b;
+  }
+
+  .cls-5,
+  .cls-8 {
+    stroke-width: 0.5px;
+  }
+
+  .cls-6 {
+    fill: url(#radial-gradient-3);
+  }
+
+  .cls-7 {
+    fill: url(#radial-gradient-4);
+  }
+
+  .cls-8 {
+    fill: #1e1b30;
+  }
 }
