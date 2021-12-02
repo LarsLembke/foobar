@@ -4,25 +4,21 @@
   font-weight: 100;
   width: 100%;
   color: white;
-  display: grid;
-  grid-column: 1/-1;
-  grid-row: 1/-1;
   text-align: center;
+  
 }
 
 #kegs {
   padding: 1vw;
   border: 2px solid white;
   margin-top: 1vh;
-  overflow: auto;
-  display: flex;
-  flex-wrap: wrap;
   height: 35vh;
-  width: 60vh;
-  grid-column-gap: 1vh;
-  grid-row-gap: 1vh;
-  overflow-y: hidden;
+  overflow-y: auto;
   justify-content: center;
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 1vh;
+  padding-bottom: 1vh;
 
 }
 
@@ -32,7 +28,7 @@
   padding-left: 1vh;
   padding-right: 1vh;
   padding-top: 1vh;
- flex-basis: 10px;
+  flex-basis: 125px;
   
 }
 
@@ -109,3 +105,24 @@
     fill: #1e1b30;
   }
 }
+
+@media screen and (min-width: 769px) {
+    .kegs_header {
+        display: grid;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+    }
+
+    #kegs {
+    display: flex;
+  flex-wrap: wrap;
+  grid-column-gap: 1vh;
+  grid-row-gap: 1vh;
+  width: 60vh;
+  overflow-y: hidden;
+    }
+
+    .keg {
+        flex-basis: 10px;
+    }
+  }
