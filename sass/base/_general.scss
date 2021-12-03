@@ -10,10 +10,7 @@ html {
 body {
     background-color: #2a283d;
     overflow-y: hidden;
-    
 }
-
-
 
 .foobar_logo {
     display: none;
@@ -29,10 +26,11 @@ body {
 
 .cols {
     display: grid; 
-    grid-template-columns: 375px 375px 375px;
+    grid-template-columns: 100vw 100vw 100vw;
     overflow-x: scroll;
     grid-template-rows: 1fr;
     scroll-snap-type: x mandatory;
+    overflow-y: hidden;
     
 }
 
@@ -89,9 +87,8 @@ body {
 
     body {
         overflow-y: hidden;  
-        overflow-x: hidden; 
         margin-left: 3vh; 
-    margin-right: 3vh;
+        margin-right: 3vh;
     }
 
     .foobar_logo {
