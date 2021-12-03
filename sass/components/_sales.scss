@@ -1,9 +1,11 @@
 #beer_amount {
     border: 2px solid white;
-    height: 10vh;
+    height: 8vh;
     margin-top: 1vh;
     box-shadow: 2px 2px 10px black;
     text-shadow: 2px 2px 2px black;
+    display: inline-block;
+    width: 90vw;
 }
 
 #beer_amount p {
@@ -11,8 +13,8 @@
     border: 1px solid white;
     font-size: 1.5rem;
     margin: 2vw;
-    padding-bottom: 5.5vw;
-    padding-top: 4vw;
+    padding-bottom: 3.5vw;
+    padding-top: 2vw;
 }
 
 
@@ -20,15 +22,17 @@
 #beer_graph {
     text-align: center;
     border: 2px solid white;
-    height: 37.8vh;
+    height: 24.5vh;
     margin-top: 1vh;
     box-shadow: 2px 2px 10px black;
-   
+    display: inline-block;
+    width: 90vw;
 }
 
 @media screen and (min-width: 769px) {
     #beer_amount {
         width: 30vh;
+        height: 10vh;
 }
 
 #beer_amount p {
@@ -39,6 +43,7 @@
 
 #beer_graph {
     width: 30vh;
+    height: 37.8vh;
 }
 
 }

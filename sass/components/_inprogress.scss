@@ -1,12 +1,14 @@
 
 #in_progress {
-    height: 40vh;
+    height: 35vh;
     padding: 1vw;
     border: 2px solid white;
     margin-top: 1vh;
     overflow: auto;
     box-shadow: 2px 2px 10px black;
-    
+    display: inline-block;
+    width: 90vw;
+
 }
 
 #in_progress p {
@@ -28,6 +30,7 @@
     @media screen and (min-width: 769px) {
         #in_progress {
             width: 30vh;
+            height: 40vh;
         }
     }
 

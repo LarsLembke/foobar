@@ -6,7 +6,8 @@
   grid-template-rows: 0.5fr 8fr;
   height: 37.8vh;
   box-shadow: 2px 2px 10px black;
-  
+  display: inline-block;
+  width: 90vw;
 }
 
 #countdown {
@@ -16,9 +17,9 @@
 .circle_timer_svg {
   display: block;
   margin: auto;
-  padding-top: 8vh;
-  width: 30vh;
-  height: 30vh;
+  padding-top: 4.5vh;
+  width: 35vh;
+  height: 35vh;
 }
 
 .circle_timer_div {
@@ -349,4 +350,12 @@ path#draw3 {
     #circle_timer {
         width: 30vh;
 }
+
+.circle_timer_svg {
+    display: block;
+    margin: auto;
+    padding-top: 8vh;
+    width: 30vh;
+    height: 30vh;
+  }
 }

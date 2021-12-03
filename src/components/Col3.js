@@ -88,6 +88,7 @@ export default function Col3(props){
     }
 
     return <section id="col3">
+        <img src="foobar_logo.png" alt="foobar logo" className="foobar_logo_mobile" />
         <Countdown bar={props.data.bar}/>
         <Beeramount />
         <Beergraph/>
