@@ -1,12 +1,12 @@
 #history {
     padding: 1vw;
     border: 2px solid white;
-    margin-top: 1vh;
+    margin-top: 2vh;
     overflow: auto;
     height: 34.5vh;
     box-shadow: 2px 2px 10px black;
     display: inline-block;
-    width: 90vw;
+    width: 80vw;
 }
 
 .order_history {
@@ -21,11 +21,16 @@
 
 }
 
+.order:last-child {
+    margin-bottom: 1vh;
+}
+
 @media screen and (min-width: 769px) {
     #history {
-        display: flex; 
+    display: flex; 
     flex-direction: column;
     width: 60vh;
-    height: 29.8vh;
+    height: 31vh;
+    padding: 1vh;
     }
 }

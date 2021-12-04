@@ -26,6 +26,7 @@ export default function Beergraph(){
 
 
     return <figure id="beer_graph">
+        <h2 className="distribution">DISTRIBUTION</h2>
         <p>El Hefe: {elHefe}</p>
         <p>Hollaback Lager: {hollabackLager}</p>
         <p>Hoppily Ever After: {hoppilyEA}</p>
@@ -35,6 +36,6 @@ export default function Beergraph(){
         <p>Mowintime: {mowintime}</p>
         <p>Ruined Childhood: {ruinedChildhood}</p>
         <p>Sleighride: {sleighride}</p>
-
+        
     </figure>
 }

@@ -51,7 +51,7 @@ body {
 }
 
 #col1 {
-    margin-top: 2vh;
+    margin-top: 1vh;
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -60,7 +60,7 @@ body {
 }
 
 #col2 {
-    margin-top: 2vh;
+    margin-top: 1vh;
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -71,7 +71,7 @@ body {
 }
 
 #col3 {
-    margin-top: 2vh;
+    margin-top: 1vh;
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -112,10 +112,19 @@ body {
         gap: 8vh;
      }
 
+     #col1 {
+         margin-top: 3vh;
+     }
+
     #col2 {
         margin-top: 0;
         display: flex;
         flex-direction: column;
+    }
+
+    #col3 {
+        margin-top: 3vh;
+
     }
 
 }

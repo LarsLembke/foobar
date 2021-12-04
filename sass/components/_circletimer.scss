@@ -4,10 +4,10 @@
   overflow: hidden;
   display: grid;
   grid-template-rows: 0.5fr 8fr;
-  height: 37.8vh;
+  height: 36.5vh;
   box-shadow: 2px 2px 10px black;
   display: inline-block;
-  width: 90vw;
+  width: 80vw;
 }
 
 #countdown {
@@ -17,7 +17,7 @@
 .circle_timer_svg {
   display: block;
   margin: auto;
-  padding-top: 3.5vh;
+  padding-top: 4vh;
   width: 35vh;
   height: 35vh;
 }
@@ -25,7 +25,6 @@
 .circle_timer_div {
   position: relative;
   top: -10vh;
-  max-height: 10vh;
 }
 
 .closing_in {
@@ -349,12 +348,12 @@ path#draw3 {
 @media screen and (min-width: 769px) {
     #circle_timer {
         width: 30vh;
+        height: 32vh;
+        padding: 1vh;
 }
 
 .circle_timer_svg {
-    display: block;
-    margin: auto;
-    padding-top: 8vh;
+    padding-top: 5vh;
     width: 30vh;
     height: 30vh;
   }

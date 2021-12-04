@@ -11,7 +11,7 @@
 }
 
 #kegs {
-    width: 90vw;
+  width: 80vw;
   padding: 1vw;
   border: 2px solid white;
   margin-top: 1vh;
@@ -34,8 +34,12 @@
   padding-right: 1vh;
   padding-top: 1vh;
   box-shadow: 1px 1px 5px black;
-  flex-basis: 130px;
+  flex-basis: 120px;
   
+}
+
+.keg:last-child {
+    margin-bottom: 1vh;
 }
 
 .keg p {
@@ -114,21 +118,21 @@
 
 @media screen and (min-width: 769px) {
     .kegs_header {
-        display: grid;
-  grid-column: 1/-1;
-  grid-row: 1/-1;
+    display: grid;
+    grid-row: 1/-1;
     }
 
     #kegs {
     display: flex;
-  grid-column-gap: 1vh;
-  grid-row-gap: 1vh;
-  width: 60vh;
-  overflow-y: hidden;
-  flex-direction: none;
+    grid-column-gap: 1vh;
+    width: 60vh;
+    overflow-y: hidden;
+    flex-direction: none;
+    padding: 1vh;
     }
 
     .keg {
         flex-basis: 10px;
+        padding: 0.8vh;
     }
   }

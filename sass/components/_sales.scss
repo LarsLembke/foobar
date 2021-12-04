@@ -1,17 +1,29 @@
+.distribution {
+    font-family: lato, sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        color: white;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        text-align: center;
+        text-shadow: 2px 2px 2px black;
+}
+
 #beer_amount {
     border: 2px solid white;
     height: 8vh;
-    margin-top: 1vh;
+    margin-top: 2vh;
     box-shadow: 2px 2px 10px black;
     text-shadow: 2px 2px 2px black;
     display: inline-block;
-    width: 90vw;
+    width: 80vw;
 }
 
 #beer_amount p {
     text-align: center;
     font-size: 1.5rem;
     margin: 2.2vh;
+    
 }
 
 
@@ -20,17 +32,39 @@
     text-align: center;
     border: 2px solid white;
     height: 24.5vh;
-    margin-top: 1vh;
+    margin-top: 2vh;
     box-shadow: 2px 2px 10px black;
     display: inline-block;
-    width: 90vw;
+    width: 80vw;
     overflow-y: auto;
+}
+
+#beer_graph p {
+    margin-right: 1.5vh; 
+    margin-left: 1.5vh;
+    padding: 1vw;
+    border: 1px solid white;
+    margin-bottom: 0.5vh;
+
+}
+
+#beer_graph p:nth-child(odd) {
+    background-color: #2a283d;
+}
+
+#beer_graph p:nth-child(even) {
+    background-color: #1d1b2e;
+}
+
+#beer_graph p:last-child {
+    margin-bottom: 1.5vh;
 }
 
 @media screen and (min-width: 769px) {
     #beer_amount {
         width: 30vh;
         height: 10vh;
+        padding: 1vh;
 }
 
 #beer_amount p {
@@ -41,8 +75,15 @@
 
 #beer_graph {
     width: 30vh;
-    height: 37.8vh;
+    height: 32.8vh;
+    padding: 1vh;
 }
+#beer_graph p {
+    margin-right: 1vh; 
+    margin-left: 1vh;
+    
+}
+
 
 }
 
