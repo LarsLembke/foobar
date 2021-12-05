@@ -20,10 +20,18 @@
 }
 
 #beer_amount p {
+    font-family: lato, sans-serif;
+    font-style: normal;
+    font-weight: 100;
     text-align: center;
     font-size: 1.5rem;
     margin: 2.2vh;
-    
+    color: white;
+}
+
+.inner_border {
+    border: 1px solid rgb(198, 192, 210);
+
 }
 
 
@@ -42,18 +50,18 @@
 #beer_graph p {
     margin-right: 1.5vh; 
     margin-left: 1.5vh;
-    padding: 1vw;
-    border: 1px solid white;
-    margin-bottom: 0.5vh;
+    padding: 1vh;
+    border: 1px solid rgb(198, 192, 210);
+    margin-bottom: 0.6vh;
 
 }
 
 #beer_graph p:nth-child(odd) {
-    background-color: #2a283d;
+    background-color: #363645;
 }
 
 #beer_graph p:nth-child(even) {
-    background-color: #1d1b2e;
+    background-color: #464254;
 }
 
 #beer_graph p:last-child {
