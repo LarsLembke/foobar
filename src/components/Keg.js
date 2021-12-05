@@ -2,7 +2,7 @@
 
 export default function Kegs(props){
 
-    console.log(props.level / 13.888888889)
+    // console.log(props.level / 13.888888889)
 
 
     const indicatorAngle = props.level / 13.8888889;
@@ -262,10 +262,10 @@ export default function Kegs(props){
     <line class="cls-5" x1="79.6" y1="262.1" x2="59.9" y2="262.1"/>
   </g>
   <g id="Layer_3" data-name="Layer 3" >
-    <circle class="cls-8" cx="252.5" cy="264.3" r="9.9"/>
-    <path class="cls-2" d="M252.9,262.8c0-0.7-0.6-1.3-1.3-1.4c-91.8-0.5-206.1-1-207.2-0.5c-0.4,0.2-0.8,0.5-1,0.9
-		c-0.1,0.3-0.1,0.6-0.1,0.9c0.1,0.5,0.5,0.9,0.9,1.1c3.4,2,201.9,0.6,207.3,0.5c0.8,0,1.4-0.6,1.4-1.4
-		C252.9,262.9,252.9,262.9,252.9,262.8z" style={indicatorLevel}/>
+    <circle class="cls-8" cx="252.5" cy="263.3" r="15"/>
+    <path class="cls-2" d="M252.9,262.8c0-1.9-0.6-3.4-1.3-3.7c-91.8-1.3-206.1-2.7-207.2-1.3c-0.4,0.5-0.8,1.3-1,2.4
+		c-0.1,0.8-0.1,1.6-0.1,2.4c0.1,1.3,0.5,2.4,0.9,2.9c3.4,5.3,201.9,1.6,207.3,1.3c0.8,0,1.4-1.6,1.4-3.7
+		C252.9,263.1,252.9,263.1,252.9,262.8z" style={indicatorLevel}/>
   </g>
 </svg>
 

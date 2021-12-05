@@ -15,7 +15,7 @@ export default function History(props){
     const idMap = props.order.map((ord) => ord.id);
     const currentOrders = props.order
 
-    console.log(idMap);
+    // console.log(idMap);
     // console.log(currentOrders);
 
     let map4Orders = '';
@@ -34,7 +34,7 @@ export default function History(props){
 
             localStorage.setItem('orderIds', idMap);
 
-            console.log(idMap,'set storage')
+            // console.log(idMap,'set storage')
         } else {
 
         const savedIds = localStorage.getItem('orderIds').split(',');
@@ -42,11 +42,11 @@ export default function History(props){
         const newSaves = idMap.map((ns) => {
             const stringNS = ns.toString()
             if (savedIds.includes(stringNS)){
-                console.log('n')
+                // console.log('n')
 
 
             } else {
-                console.log(ns)
+                // console.log(ns)
 
                 localStorage.setItem('orderIds', savedIds.concat(ns))
             }
@@ -55,8 +55,8 @@ export default function History(props){
 
        
 
-        console.log(newSaves)
-        console.log(savedIds)
+        // console.log(newSaves)
+        // console.log(savedIds)
         
 
         }
