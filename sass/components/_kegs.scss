@@ -1,7 +1,7 @@
 .kegs_header {
   font-family: lato, sans-serif;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 200;
   width: 100%;
   color: white;
   text-align: center;
@@ -135,8 +135,8 @@
 
     .keg {
         flex-basis: 10px;
-        padding-top: 0.7vh;
-        padding-bottom: 0.4vh;
+        padding-top: 0.3vh;
+        padding-bottom: 0.3vh;
     }
 
     .keg:last-child {
