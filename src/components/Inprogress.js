@@ -5,11 +5,19 @@ import Order from "./Order";
 
 export default function Inprogress(props){
   
-    if(!props.order) {
+    if(!props.order ) {
       return null;
     }
 
-    const mapped = props.order.map((ord) => <Order no={ord.id} order={ord.order} bartenders={props.bartender}/>);
+ 
+
+    const mapped = props.order.map((ord) => {
+
+      // const barT = props.bartender.filter(b => b.servingCustomer === ord.id)
+
+      // return <Order no={ord.id} order={ord.order} bartender={barT}/>
+      return <Order no={ord.id} order={ord.order}/>
+  });
 
     return <div id="in_progress">
 

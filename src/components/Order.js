@@ -30,10 +30,10 @@ export default function Order(props){
     const mapped = props.order.map((ord) => <li>{ord}</li>);
 
     const sortOrders = props.order.sort()
-    // console.log(beerMapOrd)
+    console.log(props.bartender)
 
     return (<article className="order" key={props.no}>
-        <p className="order_id" >{props.no}</p>
+        <p className="order_id" >{props.no}     {props.bartender}</p>
         <ul className="order_beer">{beerMapOrd}</ul>
     </article>)
 
