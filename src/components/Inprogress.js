@@ -5,10 +5,11 @@ import Order from "./Order";
 
 export default function Inprogress(props){
   
-    if(!props.order ) {
+    if(!props.order) {
       return null;
     }
 
+    // console.log(props.bartender)
  
 
     const mapped = props.order.map((ord) => {
