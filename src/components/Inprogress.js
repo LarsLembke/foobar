@@ -9,7 +9,7 @@ export default function Inprogress(props){
       return null;
     }
 
-    const mapped = props.order.map((ord) => <Order no={ord.id} order={ord.order}/>);
+    const mapped = props.order.map((ord) => <Order no={ord.id} order={ord.order} bartenders={props.bartender}/>);
 
     return <div id="in_progress">
 
