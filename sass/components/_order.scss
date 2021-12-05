@@ -1,23 +1,24 @@
 
 .order {
     padding: 1vw;
-    border: 1px solid white;
+    border: 1px solid rgb(198, 192, 210);
     margin-left: 1vh;
     margin-right: 1vh;
 
 }
 
 .order:nth-child(odd) {
-    background-color: #2a283d;
+    background-color: #363645;
 }
 
 .order:nth-child(even) {
-    background-color: #1d1b2e;
+    background-color: #464254;
 }
 
 .order_id {
     font-size: 1.2rem;
-    border-bottom: 1px dotted white;
+    border-bottom: 1px dotted #2a283d;
     padding-left: 1vh;
+    color: rgb(198, 192, 210);
 }
 

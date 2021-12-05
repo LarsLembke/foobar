@@ -28,7 +28,7 @@
 }
 
 .keg {
-  border: 1px solid white;
+  border: 1px solid rgb(198, 192, 210);
   text-align: center;
   padding-left: 1vh;
   padding-right: 1vh;
@@ -39,13 +39,15 @@
 }
 
 .keg:last-child {
-    margin-bottom: 1vh;
+  margin-bottom: 1vh;
 }
 
 .keg p {
   background-color: #1d1b2e;
   margin: 0 auto;
   font-size: 0.9rem;
+  padding: 0.2vh;
+  
 }
 
 .niveauindikator svg {
@@ -133,6 +135,11 @@
 
     .keg {
         flex-basis: 10px;
-        padding: 0.8vh;
+        padding-top: 0.7vh;
+        padding-bottom: 0.4vh;
     }
+
+    .keg:last-child {
+      margin-bottom: 0vh;
+  }
   }

@@ -71,26 +71,31 @@ path#draw2 {
 @keyframes drawIt2 {
   0% {
     stroke-width: 10;
-    stroke: #0e0e4f;
+    stroke: #099a84;
+    opacity: 0.5;
     
   }
 
   25% {
-    stroke: rgb(22, 128, 121);
+    stroke: #2ed5b6;
+    opacity: 0.8;
   }
   50% {
     stroke: #21f0aa;
     stroke-width: 10;
+    opacity: 1;
    
   }
 
   75%{
-    stroke: rgb(0, 62, 109);
+    stroke: #2ec7b0;
+    opacity: 0.5;
   }
 
   100% {
     stroke-width: 10;
-    stroke: #0e0e4f;
+    stroke: #0096a0;
+    opacity: 0.8;
   }
 }
 
@@ -106,14 +111,14 @@ path#draw3 {
 
 @keyframes drawIt3 {
   1% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
   }
 
   2% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
@@ -130,14 +135,14 @@ path#draw3 {
   }
 
   11% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
   }
 
   12% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
@@ -154,14 +159,14 @@ path#draw3 {
   }
 
   21% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
   }
 
   22% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
@@ -178,14 +183,14 @@ path#draw3 {
   }
 
   31% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
   }
 
   32% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
@@ -201,14 +206,14 @@ path#draw3 {
     stroke-opacity: 0;
   }
   41% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
   }
 
   42% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
@@ -225,14 +230,14 @@ path#draw3 {
   }
 
   51% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
   }
 
   52% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
@@ -249,14 +254,14 @@ path#draw3 {
   }
 
   61% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
   }
 
   62% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
@@ -273,14 +278,14 @@ path#draw3 {
   }
 
   71% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
   }
 
   72% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
@@ -297,14 +302,14 @@ path#draw3 {
   }
 
   81% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
   }
 
   82% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
@@ -321,14 +326,14 @@ path#draw3 {
   }
 
   91% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
   }
 
   92% {
-    stroke-width: 13;
+    stroke-width: 12;
     stroke: #ffffff;
     stroke-opacity: 1;
     filter: blur(1px);
