@@ -27,13 +27,22 @@ export default function Order(props){
         
     })
 
+function beerID() {
+        if (!props.bartender){
+
+            return <p className="order_id" >{props.no}</p>
+        }
+
+        return <p className="order_id" >{props.no}...........{props.bartender[0].name}</p>
+
+    } 
+
     const mapped = props.order.map((ord) => <li>{ord}</li>);
 
     const sortOrders = props.order.sort()
-    // console.log(props.bartender)
 
     return (<article className="order" key={props.no}>
-        <p className="order_id" >{props.no}     </p>
+        {beerID()}
         <ul className="order_beer">{beerMapOrd}</ul>
     </article>)
 

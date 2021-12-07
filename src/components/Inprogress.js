@@ -9,15 +9,15 @@ export default function Inprogress(props){
       return null;
     }
 
-    // console.log(props.bartender)
+    console.log(props.bartender)
  
 
     const mapped = props.order.map((ord) => {
 
-      // const barT = props.bartender.filter(b => b.servingCustomer === ord.id)
+      const barT = props.bartender.filter(b => b.servingCustomer === ord.id)
 
-      // return <Order no={ord.id} order={ord.order} bartender={barT}/>
-      return <Order no={ord.id} order={ord.order}/>
+      return <Order no={ord.id} order={ord.order} bartender={barT}/>
+      // return <Order no={ord.id} order={ord.order}/>
   });
 
     return <div id="in_progress">
