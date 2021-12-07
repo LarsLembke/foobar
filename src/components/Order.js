@@ -33,7 +33,7 @@ function beerID() {
             return <p className="order_id" >{props.no}</p>
         }
 
-        return <p className="order_id" >{props.no}...........{props.bartender[0].name}</p>
+        return <p className="order_id" >{props.no} - {props.bartender[0].name}</p>
 
     } 
 
