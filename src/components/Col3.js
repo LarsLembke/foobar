@@ -14,8 +14,6 @@ export default function Col3(props){
         return null
     }
 
-
-
     getOrderId();
 
 
@@ -27,7 +25,6 @@ export default function Col3(props){
 
         const latestId = idMap[idMap.length - 1]
 
-        //console.log(smallestId, latestId)
 
         if (!localStorage.id) {
             localStorage.setItem('id', latestId)
@@ -36,7 +33,6 @@ export default function Col3(props){
         } else {
             const currentId = localStorage.getItem('id')
 
-            // console.log(currentId, smallestId)
 
             if(currentId < smallestId) {
                 localStorage.setItem('id', latestId)
@@ -46,8 +42,6 @@ export default function Col3(props){
         }
 
     }
-
-
 
     function getBeers() {
         const beerBeerBeer = [];
@@ -73,17 +67,15 @@ export default function Col3(props){
             localStorage.setItem('servedBeer', servedBeer);
         
         
-            } else {
+        } else {
         
-                const savedBeer = localStorage.getItem('servedBeer').split(',');
+            const savedBeer = localStorage.getItem('servedBeer').split(',');
         
-                const beerUpdate = servedBeer.concat(savedBeer)
+            const beerUpdate = servedBeer.concat(savedBeer)
 
-                localStorage.setItem('servedBeer', beerUpdate)
+            localStorage.setItem('servedBeer', beerUpdate)
                 
-            }
-      
-    //  console.log(localStorage.getItem('servedBeer').split(","), 'storage')
+        }
 
     }
 

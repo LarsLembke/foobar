@@ -9,14 +9,9 @@ export default function History(props){
         return null
     }
 
-
-    const url = 'https://etall-acc0.restdb.io/rest/foobarhistory'
-
     const idMap = props.order.map((ord) => ord.id);
     const currentOrders = props.order
 
-    // console.log(idMap);
-    // console.log(currentOrders);
 
     let map4Orders = '';
 
@@ -25,39 +20,30 @@ export default function History(props){
 
     function saveOrders () {
 
-        const localOrder = currentOrders.map((lOrd) => localStorage.setItem(lOrd.id, lOrd.order))
+        currentOrders.map((lOrd) => localStorage.setItem(lOrd.id, lOrd.order))
 
 
 
         if (!localStorage.orderIds) {
 
-
             localStorage.setItem('orderIds', idMap);
 
-            // console.log(idMap,'set storage')
         } else {
 
         const savedIds = localStorage.getItem('orderIds').split(',');
 
-        const newSaves = idMap.map((ns) => {
+        idMap.map((ns) => {
             const stringNS = ns.toString()
             if (savedIds.includes(stringNS)){
-                // console.log('n')
-
-
+             
             } else {
-                // console.log(ns)
+
 
                 localStorage.setItem('orderIds', savedIds.concat(ns))
             }
             
         });
 
-       
-
-        // console.log(newSaves)
-        // console.log(savedIds)
-        
 
         }
 
@@ -92,7 +78,6 @@ export default function History(props){
     }
 
 
-    //get ids, get stored ids
 
     return <div id="history">
         <h2 className="order_history">ORDER HISTORY</h2>

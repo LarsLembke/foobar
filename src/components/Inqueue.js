@@ -5,8 +5,6 @@ import Order from "./Order";
 
 export default function Inqueue(props){
 
-    // console.log(props)
-
     if(!props.order) {
       return null;
     }

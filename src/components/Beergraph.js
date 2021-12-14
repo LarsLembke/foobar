@@ -11,9 +11,6 @@ export default function Beergraph(){
         return -1
     }
 
-
-    // console.log(beers.filter(beer => beer === 'El Hefe').length, 'El Hefe')
-
     const elHefe = beers.filter(beer => beer === 'El Hefe').length
     const hollabackLager = beers.filter(beer => beer === 'Hollaback Lager').length
     const hoppilyEA = beers.filter(beer => beer === 'Hoppily Ever After').length

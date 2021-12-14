@@ -10,14 +10,9 @@ export default function Countdown(props){
         return null;
     }
 
-    // console.log(props.bar)
 
     const closingTime = props.bar.closingTime
     const today = new Date()
-
-    // console.log(closingTime.slice(6,8))
-    // console.log(timeToClose());
-
 
     function checkTime () {
         let hrs =  parseInt(closingTime.slice(0,2)) - today.getHours();
