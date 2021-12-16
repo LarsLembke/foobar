@@ -1,7 +1,9 @@
+$our-greey: rgb(198, 192, 210);
+
 
 .order {
     padding: 1vw;
-    border: 1px solid rgb(198, 192, 210);
+    border: 1px solid $our-greey;
     margin-left: 1vh;
     margin-right: 1vh;
 
@@ -17,8 +19,8 @@
 
 .order_id {
     font-size: 1.2rem;
-    border-bottom: 1px dotted rgb(198, 192, 210);
+    border-bottom: 1px dotted $our-greey;
     padding-left: 1vh;
-    color: rgb(198, 192, 210);
+    color: $our-greey;
 }
 
