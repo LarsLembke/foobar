@@ -27,6 +27,7 @@ function App() {
       <Col2 data={order}/>
       <Col3 data={order}/>
       </div>
+      
     </div>
   );
 }
