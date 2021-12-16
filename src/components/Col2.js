@@ -14,5 +14,6 @@ export default function Col2(props){
         <img src="foobar_logo.png" alt="foobar logo" className="foobar_logo" />
         <Kegs taps={props.data.taps}/>
         <History order={props.data.serving}/>
+        <p style={{color: "white", fontSize: "3rem", transform: "translateY(-10vw)" }}><span style={{color: "grey"}}>.</span> . <span style={{color: "grey"}}>.</span></p>
     </section>
 }   
