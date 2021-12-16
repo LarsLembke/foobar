@@ -63,19 +63,17 @@
 
 @media screen and (min-width: 769px) {
     #beer_amount {
-        width: 30vh;
+        width: 18vw;
         height: 10vh;
         padding: 1vh;
 }
 
 #beer_amount p {
-    margin: 1vh;
-    padding-bottom: 2vh;
-    padding-top: 2.5vh;
+    margin-top: 1vw;
 }
 
 #beer_graph {
-    width: 30vh;
+    width: 18vw;
     height: 32.8vh;
     padding: 1vh;
 }
@@ -84,8 +82,12 @@
     margin-left: 1vh;
     
 }
+}
 
-
+@media screen and (min-width: 1400px) {
+    #beer_amount p {
+        margin-top: 2vw;
+    }
 }
 
 

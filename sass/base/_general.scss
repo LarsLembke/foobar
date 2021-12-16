@@ -90,8 +90,6 @@ body {
 
     body {
         overflow-y: hidden;  
-        margin-left: 3vh; 
-        margin-right: 3vh;
     }
 
     .foobar_logo {
@@ -111,7 +109,7 @@ body {
     .cols {
         display: flex; 
         flex-direction: row;
-        gap: 8vh;
+        gap: 5vw;
         justify-content: center;
      }
 

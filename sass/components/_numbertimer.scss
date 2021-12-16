@@ -2,17 +2,29 @@
     position: relative;
     font-family: lato, sans-serif;
         font-style: normal;
+        margin-right: 1.3vw;
         font-weight: 200;
         color: #21f0aa;
         text-align: center;
         font-size: 1.5rem;
-        top: 23vh;
+        top: 23.5vh;
         text-shadow: 2px 2px 2px black;
  
 }
 
 @media screen and (min-width: 769px) {
+   #col3 .time_to_close {
+       font-size: 1.3rem;
+       top: 20vh;
+       margin-right: 1.3vw;
+   }
+}
+
+@media screen and (min-width: 1400px) {
     #col3 .time_to_close {
         top: 22vh;
+        margin-right: 0.5vw;
+        font-size: 1.5rem;
     }
 }
+
