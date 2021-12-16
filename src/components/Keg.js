@@ -272,6 +272,6 @@ export default function Kegs(props){
         </figure>
         <figcaption></figcaption>
         <p>{props.beer}</p>
-        <p>{props.level / 100}L : {props.capacity / 100}L</p>
+        <p>{props.level / 100}L of {props.capacity / 100}L</p>
     </article>
 }

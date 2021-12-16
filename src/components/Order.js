@@ -15,12 +15,8 @@ export default function Order(props){
         if (props.order.includes(b)){
 
             const noB = props.order.filter(f => f === b).length;
-
-            if (noB>1) {
-                return <li>{noB} x {b}</li>
-            }
-
-            return <li>{b}</li>;
+            
+            return <li>{noB} x {b}</li>
         }
 
         return;

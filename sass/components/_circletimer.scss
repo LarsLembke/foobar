@@ -17,9 +17,12 @@
 .circle_timer_svg {
   display: block;
   margin: auto;
-  padding-top: 4vh;
+  // padding-top: 4vh;
+  padding-top: 2vh;
+  padding-left: 8vw;
   width: 35vh;
   height: 35vh;
+  transform:rotate(90deg)
 }
 
 .circle_timer_div {
@@ -358,8 +361,11 @@ path#draw3 {
 }
 
 .circle_timer_svg {
-    padding-top: 5vh;
+    padding-top: 3vh;
+    padding-left: 1.5vw;
     width: 30vh;
     height: 30vh;
+    transform-origin: center center;
+    transform: rotate(90deg);
   }
 }

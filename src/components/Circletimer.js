@@ -3,7 +3,7 @@ import Numbertimer from "./Numbertimer";
 export default function Circletimer(props){
 
   const circleProgress = {
-    strokeDashoffset: props.checkTime * 0.000694445
+    strokeDashoffset: "-" + props.checkTime * 0.000694445
   }
 
 

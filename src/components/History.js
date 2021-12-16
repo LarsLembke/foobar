@@ -13,38 +13,25 @@ export default function History(props){
     const currentOrders = props.order
 
 
-    let map4Orders = '';
-
-    saveOrders(map4Orders);
-    
-
     function saveOrders () {
 
         currentOrders.map((lOrd) => localStorage.setItem(lOrd.id, lOrd.order))
 
-
-
-        if (!localStorage.orderIds) {
+        if (!localStorage.getItem('orderIds')) {
 
             localStorage.setItem('orderIds', idMap);
 
         } else {
 
-        const savedIds = localStorage.getItem('orderIds').split(',');
+            const savedIds = localStorage.getItem('orderIds').split(',');
 
-        idMap.map((ns) => {
+            idMap.map((ns) => {
             const stringNS = ns.toString()
-            if (savedIds.includes(stringNS)){
-             
-            } else {
 
-
+            if (!savedIds.includes(stringNS)){
                 localStorage.setItem('orderIds', savedIds.concat(ns))
-            }
-            
+            }  
         });
-
-
         }
 
         const localOrder4Map = localStorage.getItem('orderIds').split(',')
@@ -60,15 +47,14 @@ export default function History(props){
             return -1
         }
 
-        map4Orders = localOrder4MapSort.map((lo4m) => {
+        const map4Orders = localOrder4MapSort.map((lo4m) => {
 
             if (!idMap.includes(lo4m)) {
 
             const order4 = localStorage.getItem(lo4m).split(',');
-            const lo4mNO = parseInt(lo4m)
 
-            return<Order no={lo4mNO} order={order4}/>
-               
+            return<Order no={lo4m} order={order4}/>
+
             
             }
         })
@@ -81,7 +67,7 @@ export default function History(props){
 
     return <div id="history">
         <h2 className="order_history">ORDER HISTORY</h2>
-        {map4Orders}
+        {saveOrders()}
         
     </div>
 }
