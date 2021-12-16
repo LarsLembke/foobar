@@ -79,10 +79,19 @@ export default function Col3(props){
 
     }
 
+    function page() {
+        console.log(window.innerWidth)
+        if (window.innerWidth > 769) {
+            return null
+        }
+        return <p style={{color: "white", fontSize: "3rem", transform: "translateY(-10vw)" }}><span style={{color: "grey"}}>. .</span> .</p>
+    }
+
     return <section id="col3">
         <img src="foobar_logo.png" alt="foobar logo" className="foobar_logo_mobile" />
         <Countdown bar={props.data.bar}/>
         <Beeramount />
         <Beergraph/>
-    </section>
+        {page()}
+       </section>
 }
